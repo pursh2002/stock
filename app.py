@@ -13,3 +13,8 @@ def results():
        year = request.form['year']
        predicted_stock_price = model.predict(year)
        return render_template('resultsform.html', year=year,   predicted_price=predicted_stock_price)
+
+if __name__ == '__main__':
+    app.run(port=4996)
+
+
