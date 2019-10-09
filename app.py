@@ -15,6 +15,7 @@ def results():
        return render_template('resultsform.html', year=year,   predicted_price=predicted_stock_price)
 
 if __name__ == '__main__':
-    app.run(port=4996)
+    app.run("localhost", "9999", debug=True)
+
 
 
